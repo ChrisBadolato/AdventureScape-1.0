@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adventurescape.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="359.0" fitWidth="716.0" layoutX="35.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/adventureSacpe.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="348.0" layoutY="432.0" prefHeight="106.0" prefWidth="381.0">
+         <children>
+            <VBox prefHeight="106.0" prefWidth="226.0">
+               <children>
+                  <CheckBox fx:id="wizardCheck" mnemonicParsing="false" text="Wizard" />
+                  <CheckBox fx:id="warriorCheck" mnemonicParsing="false" text="Warrior" />
+                  <CheckBox fx:id="rangerCheck" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="Ranger" />
+               </children>
+            </VBox>
+            <VBox prefHeight="106.0" prefWidth="84.0">
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onMouseClicked="#startButton" prefHeight="35.0" prefWidth="81.0" text="Start" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <TextArea layoutX="7.0" layoutY="413.0" prefHeight="121.0" prefWidth="316.0" />
+   </children>
+</AnchorPane>

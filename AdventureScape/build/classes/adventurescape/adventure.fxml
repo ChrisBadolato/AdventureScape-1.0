@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adventurescape.AdventureController">
+   <children>
+      <TextArea fx:id="adventureText" layoutX="5.0" layoutY="430.0" prefHeight="124.0" prefWidth="367.0" />
+      <HBox layoutX="389.0" layoutY="430.0" prefHeight="124.0" prefWidth="346.0">
+         <children>
+            <VBox prefHeight="124.0" prefWidth="103.0">
+               <children>
+                  <Button fx:id="mageAttackButton" mnemonicParsing="false" onMouseClicked="#mageAttackButton" prefHeight="25.0" prefWidth="94.0" text="Mage Attack" />
+                  <Button fx:id="meeleAttackButton" mnemonicParsing="false" onMouseClicked="#meeleAttackButton" prefHeight="25.0" prefWidth="94.0" text="Meele Attack" />
+                  <Button fx:id="rangedAttackButton" mnemonicParsing="false" onMouseClicked="#rangedAttackButton" text="Ranged Attack" />
+               </children>
+            </VBox>
+            <VBox prefHeight="124.0" prefWidth="100.0" />
+            <VBox prefHeight="124.0" prefWidth="94.0">
+               <children>
+                  <Button fx:id="mainMenuButton" mnemonicParsing="false" onMouseClicked="#mainMenuButton" text="Main Menu" translateY="80.0" />
+                  <Button fx:id="nextLevelButton" mnemonicParsing="false" onMouseClicked="#nextLevelButton" text="Next Level" translateY="-20.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="323.0" prefHeight="86.0" prefWidth="114.0">
+         <children>
+            <Label fx:id="playerStamina" prefHeight="17.0" prefWidth="114.0" text="Stamina" />
+            <Label fx:id="playerMana" prefHeight="17.0" prefWidth="114.0" text="Label" />
+            <Label fx:id="playerStrength" prefHeight="17.0" prefWidth="114.0" text="Label" />
+            <Label fx:id="playerIntellegence" prefHeight="17.0" prefWidth="113.0" text="Label" />
+            <Label fx:id="playerAgility" prefHeight="17.0" prefWidth="113.0" text="Label" />
+         </children>
+      </VBox>
+      <VBox layoutX="399.0" layoutY="282.0" prefHeight="104.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="enemyStamina" prefHeight="17.0" prefWidth="87.0" text="Label" />
+            <Label fx:id="enemyMana" prefHeight="17.0" prefWidth="79.0" text="Label" />
+            <Label fx:id="enemyStrength" prefHeight="17.0" prefWidth="81.0" text="Label" />
+            <Label fx:id="enemyIntellegence" prefHeight="17.0" prefWidth="88.0" text="Label" />
+            <Label fx:id="enemyAgility" prefHeight="17.0" prefWidth="80.0" text="Label" />
+         </children>
+      </VBox>
+      <VBox fx:id="vBox" layoutX="580.0" layoutY="278.0" prefHeight="104.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="enemy2Stamina" prefHeight="17.0" prefWidth="69.0" text="Label" />
+            <Label fx:id="enemy2Mana" prefHeight="17.0" prefWidth="70.0" text="Label" />
+            <Label fx:id="enemy2Strength" prefHeight="17.0" prefWidth="70.0" text="Label" />
+            <Label fx:id="enemy2Intellegence" prefHeight="17.0" prefWidth="68.0" text="Label" />
+            <Label fx:id="enemy2Agility" prefHeight="17.0" prefWidth="69.0" text="Label" />
+         </children>
+      </VBox>
+      <ImageView fx:id="imagePane" fitHeight="261.0" fitWidth="200.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="enemyPane" fitHeight="221.0" fitWidth="181.0" layoutX="358.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="enemy2Pane" fitHeight="221.0" fitWidth="181.0" layoutX="539.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox layoutX="147.0" layoutY="313.0" prefHeight="111.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="106.0" prefWidth="62.0">
+               <children>
+                  <ImageView fx:id="weaponImage" fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="offhandImage" fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateY="5.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="106.0" prefWidth="66.0">
+               <children>
+                  <ImageView fx:id="helmetImage" fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="bootsImage" fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateY="5.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="111.0" prefWidth="72.0">
+               <children>
+                  <ImageView fx:id="chestImage" fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="pantsImage" fitHeight="53.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateY="5.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
